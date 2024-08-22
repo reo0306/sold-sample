@@ -14,11 +14,13 @@ class Employee:
     #def set_salary_(self, salary: int) -> None:
     #    self.__salary = salary
 
+    # プロパティデコレーターの方法
     # gettrとして使える
     @property
     def salary(self) -> int:
         return self.__salary
-    
+
+    # setter
     @salary.setter
     def salary(self, salary: int) -> None:
         self.__salary = salary

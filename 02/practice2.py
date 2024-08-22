@@ -8,6 +8,7 @@ class Shape(metaclass=ABCMeta):
         pass
 
 
+# Shapeインターフェースを実装したクラス
 class Rectangle(Shape):
     def __init__(self, width: int, height: int) -> None:
         self.__width = width
@@ -17,6 +18,7 @@ class Rectangle(Shape):
         return self.__width * self.__height
 
 
+# Shapeインターフェースを実装したクラス
 class Square(Shape):
     def __init__(self, length: int) -> None:
         self.__length = length
@@ -25,6 +27,7 @@ class Square(Shape):
         return self.__length ** 2
 
 
+# Shapeをプロパティに設定したクラス
 class Client:
     def __init__(self, shape: Shape) -> None:
         self.__shape = shape
