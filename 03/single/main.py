@@ -14,7 +14,7 @@ class PayCalculator:
 class HourReporter:
     def __get_regular_hours(self):
         print("労働時間レポート専用の労働時間計算ロジック_V2")
-    
+
     def report_hours(self, employee_data: EmployeeData):
         self.__get_regular_hours()
         print(f"{employee_data.name}の労働時間をレポートしました")
